@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="My name is Haris Malik and I'm a front-end web developer. I'm 20 years old and currently pursuing my Bachelor of Computer Applications at Amar Singh College. I'm also teaching web development at Alfurqan Computers."
+    />
+    <meta name="robots" content="index,follow" />
     <link
       rel="stylesheet"
       href="https://bootswatch.com/4/litera/bootstrap.min.css"
     />
-    <title>GitHub Finder</title>
+    <link rel="icon" href="./icon.png" />
+    <title>Git Finder</title>
   </head>
   <body>
     <nav class="bg-dark mb-3">
@@ -19,7 +25,7 @@
     <div class="container searchContainer">
       <div class="search card card-body">
         <h1>Search GitHub Users</h1>
-        <p class="lead">Enter a username to fetch a user profile and repos</p>
+        <p class="lead">Enter a username</p>
         <input
           type="text"
           id="searchUser"
@@ -31,7 +37,14 @@
       <div id="profile"></div>
     </div>
 
-    <footer class="mt-5 p-3 text-center bg-light">GitHub Finder &copy;</footer>
+    <footer class="mt-5 p-3 text-center bg-dark">
+      Made with ❤ by Haris Malik
+      <p>
+        If you found this app helpful, you can support me by following me on
+        Instagram
+        <a target="_blank" href="https://www.instagram.com/malik_haris_1/"> @malik_haris_1 </a>
+      </p>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -53,25 +66,29 @@
     <script src="ui.js"></script>
     <script src="app.js"></script>
     <style>
+      footer {
+        position: fixed;
+        bottom: 0%;
+        width: 100%;
+        color: white;
+      }
       nav {
         min-height: 10vh;
         display: flex;
         /* justify-content: center; */
         align-items: center;
       }
-      body{
-        background:#393053;
+      body {
+        background: #393053;
       }
-      .searchContainer,.search{
-        background: #443C68;
+      .searchContainer,
+      .search {
+        background: #443c68;
       }
-      .search h1{
+      .search h1 {
         color: white;
-
       }
-      #porfile .card-body {
-        background: #393053 !important;
-      }
+      
     </style>
   </body>
 </html>
